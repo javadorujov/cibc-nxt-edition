@@ -1,0 +1,39 @@
+{
+  "name": "Team Chart",
+  "schema": {
+    "title": { "type": "string", "label": "Team 1" },
+    "title2": { "type": "string", "label": "Team 2" },
+    "title3": { "type": "string", "label": "Team 3" },
+    "title4": { "type": "string", "label": "Team 4" },
+    "title5": { "type": "string", "label": "Team 5" },
+    "title6": { "type": "string", "label": "Team 6" },
+    "title7": { "type": "string", "label": "Team 7" },
+    "title8": { "type": "string", "label": "Team 8" },
+    "title9": { "type": "string", "label": "Team 9" },
+    "title10": { "type": "string", "label": "Team 10" },
+    "title11": { "type": "string", "label": "Team 11" },
+    "title12": { "type": "string", "label": "Team 12" },
+    "title13": { "type": "string", "label": "Team 13" },
+    "title14": { "type": "string", "label": "Team 14" },
+    "title15": { "type": "string", "label": "Team 15" },
+    "title16": { "type": "string", "label": "Team 16" },
+    "time1": { "type": "string", "label": "Time 1" },
+    "time2": { "type": "string", "label": "Time 2" },
+    "time3": { "type": "string", "label": "Time 3" },
+    "time4": { "type": "string", "label": "Time 4" },
+    "time5": { "type": "string", "label": "Time 5" },
+    "time6": { "type": "string", "label": "Time 6" },
+    "time7": { "type": "string", "label": "Time 7" },
+    "time8": { "type": "string", "label": "Time 8" }
+  },
+  "previewData": {
+    "Example Match 1": {
+      "title": "Team A",
+      "title2": "Team B",
+      "time1": "20:00",
+      "title3": "Team C",
+      "title4": "Team D",
+      "time2": "21:00"
+    }
+  }
+}

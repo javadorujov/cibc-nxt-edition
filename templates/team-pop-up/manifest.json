@@ -1,0 +1,25 @@
+{
+  "name": "Leaderboard",
+  "schema": {
+    "title": { "type": "string", "label": "Team 1" },
+    "title2": { "type": "string", "label": "Team 2" },
+    "title3": { "type": "string", "label": "Team 3" },
+    "title4": { "type": "string", "label": "Team 4" },
+    "points1": { "type": "string", "label": "Points 1" },
+    "points2": { "type": "string", "label": "Points 2" },
+    "points3": { "type": "string", "label": "Points 3" },
+    "points4": { "type": "string", "label": "Points 4" }
+  },
+  "previewData": {
+    "Example Match 1": {
+      "title": "Team A",
+      "title2": "Team B",
+      "title3": "Team C",
+      "title4": "Team D",
+      "points1": "100",
+      "points2": "150",
+      "points3": "200",
+      "points4": "250"
+    }
+  }
+}

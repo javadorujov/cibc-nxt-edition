@@ -1,0 +1,29 @@
+{
+  "name": "Titles",
+  "schema": {
+    "name": {
+      "type": "string",
+      "label": "Name"
+    },
+    "title": {
+      "type": "string",
+      "label": "Title"
+    },
+    "source": {
+      "type": "string",
+      "label": "Source"
+    }
+  },
+  "previewData": {
+    "Thierry Henry": {
+      "name": "Thierry Henry",
+      "title": "King of Highbury",
+      "source": "Arsenal TV"
+    },
+    "Bukayo Saka": {
+      "name": "Bukayo Saka",
+      "title": "King of Emirates",
+      "source": "Sky Sports"
+    }
+  }
+}
