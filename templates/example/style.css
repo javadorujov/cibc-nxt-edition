@@ -19,7 +19,7 @@
 
 .new-box {
   position: absolute;
-  bottom: 840px; /* Positioned above the lower third */
+  bottom: 840px; 
   left: 100px;
   width: 240px;
   color: rgb(15, 38, 61);
@@ -36,10 +36,10 @@
 
 .source-box {
   position: absolute;
-  bottom: 810px; /* Positioned above the title */
+  bottom: 810px;
   left: 105px;
   width: 240px;
-  color: white; /* Customize the color */
+  color: white;
   padding: 20px;
   font-size: 30px;
   font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;

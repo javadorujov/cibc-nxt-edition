@@ -41,7 +41,7 @@
 .team-name {
   text-align: left;
   margin-right: 20px;
-  flex: 2; /* Allow for more space for longer names */
+  flex: 2; 
 }
 
 .points {

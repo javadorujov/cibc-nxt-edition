@@ -7,7 +7,7 @@ const FramerMotionExample = () => {
   const { name, title, source } = useCasparData()
 
   return (
-    <FramerMotion hide={!title && !source}> {/* Hide if both title and source are not present */}
+    <FramerMotion hide={!title && !source}>
       {title && (
         <motion.div
           key={`title-${title}`}
@@ -90,7 +90,7 @@ const FramerMotionExample = () => {
       {source && (
         <motion.div
           key={`source-${source}`}
-          className="source-box" // Add new class for source styling
+          className="source-box" 
           initial={{
             opacity: 0,
             y: 50,

@@ -29,12 +29,12 @@
 
 .team-left {
   text-align: right;
-  padding-right: 100px; /* Add space to the right of the left team */
+  padding-right: 100px;
 }
 
 .team-right {
   text-align: left;
-  padding-left: 160px; /* Add space to the left of the right team */
+  padding-left: 160px;
 }
 
 .time-box {
@@ -47,5 +47,5 @@
   font-weight: bold;
   font-size: 35px;
   color: rgb(15, 38, 61);
-  z-index: 1; /* Ensure the time box stays on top of the text */
+  z-index: 1;
 }
