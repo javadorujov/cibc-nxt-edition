@@ -1,0 +1,49 @@
+{
+  "name": "Team Points Box",
+  "schema": {
+    "title": { "type": "string", "label": "Team 1" },
+    "title2": { "type": "string", "label": "Team 2" },
+    "title3": { "type": "string", "label": "Team 3" },
+    "title4": { "type": "string", "label": "Team 4" },
+    "title5": { "type": "string", "label": "Team 5" },
+    "number1": { "type": "string", "label": "Number 1" },
+    "number2": { "type": "string", "label": "Number 2" },
+    "number3": { "type": "string", "label": "Number 3" },
+    "number4": { "type": "string", "label": "Number 4" },
+    "number5": { "type": "string", "label": "Number 5" },
+    "points1": { "type": "string", "label": "Points 1 (can be negative)" },
+    "points2": { "type": "string", "label": "Points 2 (can be negative)" },
+    "points3": { "type": "string", "label": "Points 3 (can be negative)" },
+    "points4": { "type": "string", "label": "Points 4 (can be negative)" },
+    "points5": { "type": "string", "label": "Points 5 (can be negative)" },
+    "triangle1": { "type": "string", "label": "Triangle Color 1 (- for red)" },
+    "triangle2": { "type": "string", "label": "Triangle Color 2 (- for red)" },
+    "triangle3": { "type": "string", "label": "Triangle Color 3 (- for red)" },
+    "triangle4": { "type": "string", "label": "Triangle Color 4 (- for red)" },
+    "triangle5": { "type": "string", "label": "Triangle Color 5 (- for red)" }
+  },
+  "previewData": {
+    "Example Match 1": {
+      "title": "Team A",
+      "title2": "Team B",
+      "title3": "Team C",
+      "title4": "Team D",
+      "title5": "Team E",
+      "number1": "12312",
+      "number2": "42311",
+      "number3": "45323",
+      "number4": "32234",
+      "number5": "32242",
+      "points1": "100",
+      "points2": "-150",
+      "points3": "200",
+      "points4": "-250",
+      "points5": "300",
+      "triangle1": "-",
+      "triangle2": "",
+      "triangle3": "",
+      "triangle4": "-",
+      "triangle5": ""
+    }
+  }
+}

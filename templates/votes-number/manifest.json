@@ -1,0 +1,15 @@
+{
+  "name": "Votes Numbers",
+  "schema": {
+    "percent": { "type": "string", "label": "Percentage" },
+    "rate": { "type": "string", "label": "Rate" },
+    "hiddenTitle": { "type": "string", "label": "Hidden Title" }
+  },
+  "previewData": {
+    "Example Match 1": {
+      "percent": "22,7",
+      "rate": "7,9%",
+      "hiddenTitle": ""
+    }
+  }
+}

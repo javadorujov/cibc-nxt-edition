@@ -1,14 +1,12 @@
 .points-box {
   position: fixed;
-  bottom: 190px;
-  left: 50%;
+  bottom: 250px;
+  left: 40%;
   transform: translateX(-50%);
-  width: 600px;
-  padding: 40px 40px 20px 40px;
-  background-color: #e1f0ff;
-  border-radius: 50px 50px 0 0;
-  font-family:system-ui, -apple-system, Roboto, sans-serif;
-  font-weight: regular;
+  width: 870px;
+  padding: 40px;
+  font-family: 'Franklin Gothic Medium', sans-serif;
+  font-weight: lighter;
   color: #1b3f5e;
   display: flex;
   flex-direction: column;
@@ -16,25 +14,20 @@
   box-sizing: border-box;
 }
 
-.rank {
-  flex: 0 0 50px;
-  text-align: center;
-  font-size: 30px;
-  font-weight: lighter;
-}
-
 .team-row {
   display: flex;
   justify-content: space-between;
   width: 100%;
   margin-bottom: 20px;
-  font-size: 36px;
+  font-size: 50px;
   font-weight: bolder;
+  padding-bottom: 10px;
+  border-bottom: 2px solid #1b3f5e; 
 }
 
 .rank {
   text-align: left;
-  font-size: 36px;
+  font-size: 45px;
   margin-right: 30px;
 }
 
@@ -46,7 +39,6 @@
 
 .points {
   text-align: right;
-  font-size: 36px;
-  font-family:system-ui, -apple-system, Roboto, sans-serif;
+  font-size: 45px;
   font-weight: bolder;
 }

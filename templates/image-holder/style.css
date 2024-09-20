@@ -1,0 +1,34 @@
+.map-container {
+  display: flex;
+  position: relative;
+  width: 100%;
+  height: 500px; 
+  background-color: transparent;
+}
+
+.left-box {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-right: 20px; 
+}
+
+.right-box {
+  flex: 2;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.inset-map {
+  width: 100%;
+  max-width: 200px; 
+  border-radius: 10px;
+}
+
+.main-map {
+  width: 100%;
+  height: auto;
+  border-radius: 10px;
+}

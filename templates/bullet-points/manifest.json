@@ -1,0 +1,21 @@
+{
+  "name": "Bullet Points",
+  "schema": {
+    "title": { "type": "string", "label": "text 1" },
+    "title2": { "type": "string", "label": "text 2" },
+    "title3": { "type": "string", "label": "text 3" },
+    "title4": { "type": "string", "label": "text 4" },
+    "title5": { "type": "string", "label": "text 5" },
+    "title6": { "type": "string", "label": "text 6" }
+  },
+  "previewData": {
+    "Example Match 1": {
+      "title": "point 1",
+      "title2": "point 2",
+      "title3": "point 3",
+      "title4": "point 4",
+      "title5": "point 5",
+      "title6": "point 6"
+    }
+  }
+}

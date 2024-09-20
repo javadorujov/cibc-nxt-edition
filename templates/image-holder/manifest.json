@@ -1,0 +1,13 @@
+{
+  "name": "MapDisplay",
+  "schema": {
+    "smallImage": ["azerbaijanmap.gif"],
+    "largeImage": ["mapimage.jpeg"]
+  },
+  "previewData": {
+    "Example Maps": {
+      "smallImage": "azerbaijanmap.gif",
+      "largeImage": "mapimage.jpeg"
+    }
+  }
+}

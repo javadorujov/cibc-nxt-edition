@@ -1,0 +1,75 @@
+.points-box {
+  position: fixed;
+  bottom: 150px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 1490px;
+  padding: 40px;
+  font-family: 'Franklin Gothic Medium', sans-serif;
+  font-weight: lighter;
+  color: #1b3f5e;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  box-sizing: border-box;
+}
+
+.team-row {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  margin-bottom: 20px;
+  font-size: 60px;
+  padding-bottom: 10px;
+  border-bottom: 3px solid #1b3f5e;
+}
+
+.team-name {
+  text-align: left;
+  flex: 1;
+  margin-right: 30px;
+  font-weight: regular;
+}
+
+.team-info {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  flex: 3;
+}
+
+.team-number,
+.triangle {
+  margin-left: 10px; 
+  font-size: 70px;
+  display: flex;
+  align-items: center; 
+  font-weight:bolder;
+}
+
+.points {
+  margin-left: 10px; 
+  font-size: 40px;
+  display: flex;
+  align-items: center;
+}
+
+.triangle {
+  font-size: 50px;
+}
+
+.positive .triangle-up {
+  color: #009307; 
+}
+
+.negative .triangle-down {
+  color: #fe2b00; 
+}
+
+.positive .points {
+  color: #009307; 
+}
+
+.negative .points {
+  color: #fe2b00; 
+}

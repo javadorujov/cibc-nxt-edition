@@ -1,0 +1,54 @@
+.main-container {
+  position: fixed;
+  top: 320px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 400px;
+  padding: 20px;
+  font-family: 'Franklin Gothic Medium', sans-serif;
+  font-weight: bolder;
+  text-align: center;
+  color: #1b3f5e;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background: none; 
+}
+
+.percent-container {
+  font-size: 240px;
+  color: #1b3f5e;
+  background: none;
+  margin-bottom: 20px;
+}
+
+.rate-container {
+  font-size: 80px;
+  display: flex;
+  width: 400px;
+  font-weight: lighter;
+  height: 80px;
+  justify-content: center;
+  align-items: center;
+  color: #efedf0;
+  background: #1b3f5e; 
+  padding: 10px 20px;
+  border-radius: 0 70px 0 70px;
+}
+
+.rate-arrow {
+  font-size: 70px;
+  margin-right: 10px;
+}
+
+.rate-text {
+  font-size: 60px;
+}
+
+.negative {
+  color: #fe2b00;
+}
+
+.positive {
+  color: #009307;
+}
