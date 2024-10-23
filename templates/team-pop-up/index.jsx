@@ -1,6 +1,6 @@
 import React from 'react'
 import { render, FramerMotion, useCasparData } from '@nxtedition/graphics-kit'
-import { motion } from 'framer-motion'
+import { motion, AnimatePresence } from 'framer-motion'
 import './style.css'
 
 const TeamPointsBox = () => {
@@ -15,21 +15,30 @@ const TeamPointsBox = () => {
 
   return (
     <FramerMotion>
-      <div className="points-box">
-        {teams.map((team) => (
-          <motion.div
-            key={`team${team.rank}`}
-            className="team-row"
-            initial={{ opacity: 0, y: 20 }}
-            animate={{ opacity: 1, y: 0 }}
-            exit={{ opacity: 0, y: 20 }}
-          >
-            <span className="rank">{team.rank}</span>
-            <span className="team-name">{team.name}</span>
-            <span className="points">{team.points}</span>
-          </motion.div>
-        ))}
-      </div>
+      <AnimatePresence>
+        <motion.div
+          className="points-box"
+          initial={{ opacity: 0 }}
+          animate={{ opacity: 1 }}
+          exit={{ opacity: 0 }}
+          transition={{ duration: 0.5, ease: 'easeInOut' }}
+        >
+          {teams.map((team) => (
+            <motion.div
+              key={`team${team.rank}`}
+              className="team-row"
+              initial={{ opacity: 0 }}
+              animate={{ opacity: 1 }}
+              exit={{ opacity: 0 }}
+              transition={{ duration: 0.5, ease: 'easeInOut' }}
+            >
+              <span className="rank">{team.rank}</span>
+              <span className="team-name">{team.name}</span>
+              <span className="points">{team.points}</span>
+            </motion.div>
+          ))}
+        </motion.div>
+      </AnimatePresence>
     </FramerMotion>
   )
 }

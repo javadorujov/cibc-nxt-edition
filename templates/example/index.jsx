@@ -4,7 +4,7 @@ import { motion } from 'framer-motion'
 import './style.css'
 
 const FramerMotionExample = () => {
-  const { name, title, source } = useCasparData()
+  const { name, title, source, previewImages } = useCasparData()
 
   return (
     <FramerMotion hide={!title && !source}>
@@ -39,7 +39,6 @@ const FramerMotionExample = () => {
           {title}
         </motion.div>
       )}
-
       {name && (
         <motion.div
           key={`name-${name}`}

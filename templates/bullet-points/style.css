@@ -20,20 +20,18 @@
   width: 100%;
   margin-bottom: 20px;
   font-size: 50px;
-  font-weight: 650;
+  font-weight: 600;
   flex-wrap: nowrap;
 }
-
 
 .team-name {
   text-align: left;
   flex-grow: 1;
   white-space: nowrap;   
-  overflow:visible;       
+  overflow: visible;       
   text-overflow: ellipsis; 
   min-width: 0;
 }
-
 
 .bullet-point {
   width: 40px;

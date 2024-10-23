@@ -1,10 +1,11 @@
 import React from 'react'
 import { render, FramerMotion, useCasparData } from '@nxtedition/graphics-kit'
-import { motion } from 'framer-motion'
+import { motion, AnimatePresence } from 'framer-motion'
+import { useCaspar } from '@nxtedition/graphics-kit'
 import './style.css'
 
 const TeamPointsBox = () => {
-  const { title, title2, title3, title4, title5, title6, points1 = '0', points2 = '0', points3 = '0', points4 = '0', points5 = '0', points6 = '0',} = useCasparData()
+  const { title, title2, title3, title4, title5, title6, points1 = '0', points2 = '0', points3 = '0', points4 = '0', points5 = '0', points6 = '0', } = useCasparData()
 
   const teams = [
     { rank: 1, name: title || 'Team 1', points: points1 },
@@ -17,21 +18,30 @@ const TeamPointsBox = () => {
 
   return (
     <FramerMotion>
-      <div className="points-box">
-        {teams.map((team) => (
-          <motion.div
-            key={`team${team.rank}`}
-            className="team-row"
-            initial={{ opacity: 0, y: 20 }}
-            animate={{ opacity: 1, y: 0 }}
-            exit={{ opacity: 0, y: 20 }}
-          >
-            <span className="rank">{team.rank}°</span>
-            <span className="team-name">{team.name}</span>
-            <span className="points">{team.points} pts</span>
-          </motion.div>
-        ))}
-      </div>
+      <AnimatePresence>
+        <motion.div
+          className="points-box"
+          initial={{ opacity: 0, y: 20 }}
+          animate={{ opacity: 1, y: 0 }}
+          exit={{ opacity: 0, y: 20 }}
+          transition={{ duration: 0.5, ease: 'easeInOut' }} 
+        >
+          {teams.map((team) => (
+            <motion.div
+              key={`team${team.rank}`}
+              className="team-row"
+              initial={{ opacity: 0, y: 20 }}
+              animate={{ opacity: 1, y: 0 }}
+              exit={{ opacity: 0, y: 20 }}
+              transition={{ duration: 0.5, ease: 'easeInOut' }} 
+            >
+              <span className="rank">{team.rank}°</span>
+              <span className="team-name">{team.name}</span>
+              <span className="points">{team.points} pts</span>
+            </motion.div>
+          ))}
+        </motion.div>
+      </AnimatePresence>
     </FramerMotion>
   )
 }

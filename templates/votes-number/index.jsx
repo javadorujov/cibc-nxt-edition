@@ -14,16 +14,16 @@ const TeamPointsBox = () => {
         <motion.div
           className="percent-container"
           initial={{ opacity: 0, y: 20 }}
-          animate={{ opacity: 1, y: 0 }}
-          exit={{ opacity: 0, y: 20 }}
+          animate={{ opacity: 1, y: 0, transition: { duration: 0.8, ease: "easeInOut" } }}
+          exit={{ opacity: 0, y: 20, transition: { duration: 0.8, ease: "easeInOut" } }}
         >
           <span className="percent-text">{percent}%</span>
         </motion.div>
         <motion.div
           className="rate-container"
           initial={{ opacity: 0, y: 20 }}
-          animate={{ opacity: 1, y: 0 }}
-          exit={{ opacity: 0, y: 20 }}
+          animate={{ opacity: 1, y: 0, transition: { duration: 0.8, ease: "easeInOut" } }}
+          exit={{ opacity: 0, y: 20, transition: { duration: 0.8, ease: "easeInOut" } }}
         >
           <span className={`rate-arrow ${isHiddenTitleNegative ? 'negative' : 'positive'}`}>
             {isHiddenTitleNegative ? '▼' : '▲'}

@@ -1,6 +1,6 @@
 import React from 'react'
 import { render, FramerMotion, useCasparData } from '@nxtedition/graphics-kit'
-import { motion } from 'framer-motion'
+import { motion, AnimatePresence } from 'framer-motion'
 import './style.css'
 
 const FramerMotionExample = () => {
@@ -20,26 +20,32 @@ const FramerMotionExample = () => {
   return (
     <FramerMotion>
       <div className="match-container">
-        {matches.map(
-          (match, index) =>
-            (match.left || match.right) && (
-              <motion.div
-                key={`row${index}`}
-                className="match-row"
-                initial={{ opacity: 0, y: 50 }}
-                animate={{ opacity: 1, y: 0 }}
-                exit={{ opacity: 0, y: 50 }}
-              >
-                <div className="team-left">{match.left}</div>
-                {match.time && (
-                  <div className="time-box">
-                    <div className="time">{match.time}</div>
-                  </div>
-                )}
-                <div className="team-right">{match.right}</div>
-              </motion.div>
-            )
-        )}
+        <AnimatePresence>
+          {matches.map(
+            (match, index) =>
+              (match.left || match.right) && (
+                <motion.div
+                  key={`row${index}`}
+                  className="match-row"
+                  initial={{ opacity: 0, y: 20 }}
+                  animate={{ opacity: 1, y: 0 }}
+                  exit={{ opacity: 0, y: 20 }} // Keep the same exit state
+                  transition={{
+                    duration: 0.6, // Duration for entry
+                    ease: 'easeInOut',
+                  }}
+                >
+                  <div className="team-left">{match.left}</div>
+                  {match.time && (
+                    <div className="time-box">
+                      <div className="time">{match.time}</div>
+                    </div>
+                  )}
+                  <div className="team-right">{match.right}</div>
+                </motion.div>
+              )
+          )}
+        </AnimatePresence>
       </div>
     </FramerMotion>
   )

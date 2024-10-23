@@ -1,6 +1,6 @@
 import React from 'react'
 import { render, FramerMotion, useCasparData } from '@nxtedition/graphics-kit'
-import { motion } from 'framer-motion'
+import { motion, AnimatePresence } from 'framer-motion'
 import './style.css'
 
 const TeamPointsBox = () => {
@@ -12,10 +12,7 @@ const TeamPointsBox = () => {
   } = useCasparData()
 
   const getTriangle = (color) => {
-    if (color === '-') {
-      return <span className="triangle-down">▼</span>
-    }
-    return <span className="triangle-up">▲</span>
+    return color === '-' ? <span className="triangle-down">▼</span> : <span className="triangle-up">▲</span>
   }
 
   const getPointsClass = (color) => {
@@ -33,24 +30,30 @@ const TeamPointsBox = () => {
   return (
     <FramerMotion>
       <div className="points-box">
-        {teams.map((team, index) => (
-          <motion.div
-            key={`team${index}`}
-            className="team-row"
-            initial={{ opacity: 0, y: 20 }}
-            animate={{ opacity: 1, y: 0 }}
-            exit={{ opacity: 0, y: 20 }}
-          >
-            <span className="team-name">{team.name}</span>
-            <div className={`team-info ${getPointsClass(team.triangle)}`}>
-              <span className="team-number">{team.number}</span>
-              <span className={`triangle ${team.triangle === '-' ? 'negative' : 'positive'}`}>
-                {getTriangle(team.triangle)}
-              </span>
-              <span className={`points ${getPointsClass(team.triangle)}`}>{team.points}%</span>
-            </div>
-          </motion.div>
-        ))}
+        <AnimatePresence>
+          {teams.map((team, index) => (
+            <motion.div
+              key={`team${index}`}
+              className="team-row"
+              initial={{ opacity: 0, y: 20 }} 
+              animate={{ opacity: 1, y: 0 }}
+              exit={{ opacity: 0, y: 20 }} 
+              transition={{
+                duration: 1, 
+                ease: 'easeInOut', 
+              }}
+            >
+              <span className="team-name">{team.name}</span>
+              <div className={`team-info ${getPointsClass(team.triangle)}`}>
+                <span className="team-number">{team.number}</span>
+                <span className={`triangle ${team.triangle === '-' ? 'negative' : 'positive'}`}>
+                  {getTriangle(team.triangle)}
+                </span>
+                <span className={`points ${getPointsClass(team.triangle)}`}>{team.points}%</span>
+              </div>
+            </motion.div>
+          ))}
+        </AnimatePresence>
       </div>
     </FramerMotion>
   )

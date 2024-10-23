@@ -1,7 +1,7 @@
 .points-box {
   position: fixed;
   bottom: 250px;
-  left: 40%;
+  left: 15%;
   transform: translateX(-50%);
   width: 870px;
   padding: 40px;

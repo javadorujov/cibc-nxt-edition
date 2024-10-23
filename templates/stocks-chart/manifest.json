@@ -1,5 +1,5 @@
 {
-  "name": "Team Points Box",
+  "name": "Stocks Box",
   "schema": {
     "title": { "type": "string", "label": "Team 1" },
     "title2": { "type": "string", "label": "Team 2" },
